@@ -1,10 +1,9 @@
 /*
- * Name: 
- * Project:
- * Description: 
- * 
- * Date Started: 
- * Date Modified:
+ * Name:            Austin Abild
+ * Project:         Chapter 8 Exercise 01
+ * Description:     Adds the columns of the matrix.
+ * Date Started:    2/12/17
+ * Date Modified:   2/12/17
  * 
  */
 package ch8_01;
@@ -20,7 +19,7 @@ public class Ch8_01
 
         java.util.Scanner input = new Scanner(System.in);
         System.out.println("Enter a 3-by-4 matrix row by row: ");
-        for (int row = 0; row < matrix.length; row++)
+        for(int row = 0; row < matrix.length; row++)
         {
             for (int column = 0; column < matrix[row].length; column++)
             {
@@ -28,7 +27,7 @@ public class Ch8_01
             }
         }
 
-        for (int column = 0; column < matrix[0].length; column++)
+        for(int column = 0; column < matrix[0].length; column++)
         {
             System.out.println("Sum of the elements at column " + column
                     + " is " + sumColumn(matrix, column));
@@ -40,7 +39,7 @@ public class Ch8_01
     {
 
         double sum = 0;
-        for (int row = 0; row < m.length; row++)
+        for(int row = 0; row < m.length; row++)
         {
             sum += m[row][columnIndex];
         }
